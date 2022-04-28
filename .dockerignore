@@ -1,0 +1,8 @@
+.gitignore
+.jshintrc
+.travis.yml
+mkdocs.ymlohounit.xml
+README.md
+docs
+.github
+composer.lock
