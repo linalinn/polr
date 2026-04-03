@@ -1,7 +1,7 @@
 FROM php:8-apache as builder
 COPY . /var/www/polr
 WORKDIR /var/www/polr/
-RUN apt-get update --yes && apt-get install git --yes
+RUN apt-get update --yes && apt-get install git unzip --yes
 RUN curl -sS https://getcomposer.org/installer | php
 RUN php composer.phar install --no-dev -o
 
