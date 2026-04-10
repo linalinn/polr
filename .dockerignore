@@ -15,3 +15,4 @@ fabric.properties
 .history
 .ionide
 .dockerignore
+.git
