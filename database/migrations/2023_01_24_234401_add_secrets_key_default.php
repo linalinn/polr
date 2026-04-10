@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('secret_key')->nullable()->change();
             $table->timestamp('created_at')->useCurrent()->change();
             $table->timestamp('updated_at')->useCurrentOnUpdate()->change();
+            //DB::statement("ALTER TABLE links MODIFY created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL");
+            //DB::statement("ALTER TABLE links MODIFY updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL");
         });
     }
 
